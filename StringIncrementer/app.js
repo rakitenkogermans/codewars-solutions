@@ -1,19 +1,20 @@
-function incrementString (string) {
-    // console.log('input string ', string);
-    var digits_arr =  string.match(/\d/g);
-    if (digits_arr !== null) {
-        var a = digits_arr;
-        digits_arr = parseInt(digits_arr.join(''));
-        var tmp = (digits_arr + 1).toString().split('');
-        if (tmp.length === a.length) {
-            a.join('');
-            string = string.slice(0, string.length - tmp.length) + (digits_arr + 1);
-        }
-        string = string.slice(0, string.length - tmp.length) + (digits_arr + 1);
-    } else {
-        string = string + 1;
+const incrementString = (string) => {
+    if (string === null || string === undefined || string === '') {
+        return '1';
     }
-    return string;
+    const digits_arr =  string.match(/\d/g);
+    const char_arr =  string.replace(/[0-9]/g, '');
+    let str = string.slice(char_arr.length) || "0";
+    str = (+str + 1).toString();
+    if (digits_arr !== null) {
+        if (digits_arr.length > str.length) {
+            const tmp = digits_arr.splice(0, digits_arr.length - str.length).join('');
+            return char_arr + tmp + str;
+        }
+        return char_arr + str;
+    } else {
+        return string + 1;
+    }
 }
 
 
@@ -25,3 +26,4 @@ console.log(incrementString("foobar99"));
 console.log(incrementString("foobar099"));
 console.log(incrementString("foobar00999"));
 console.log(incrementString(""));
+console.log(incrementString(null));
