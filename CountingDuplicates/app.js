@@ -1,4 +1,4 @@
-function duplicateCount(text){
+const duplicateCount = (text) => {
     if (text.length === 0) return 0;
 
     let map = new Map();

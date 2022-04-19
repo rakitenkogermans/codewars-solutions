@@ -1,4 +1,4 @@
-function add(a, b) {
+const add = (a, b) => {
 
     // Before proceeding further, make
     // sure length of b is larger.

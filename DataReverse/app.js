@@ -1,4 +1,4 @@
-function dataReverse(data) {
+const dataReverse = (data) => {
     let result = [];
     for (let i = 0; i < (data.length); i += 8) {
         let x = i + 8;

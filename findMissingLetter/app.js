@@ -1,4 +1,4 @@
-function findMissingLetter(str) {
+const findMissingLetter = (str) => {
     // Merge array of characters into string.
     // Get character code at first position of the string.
     // Compare characters and it index.

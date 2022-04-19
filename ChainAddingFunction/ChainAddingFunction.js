@@ -1,4 +1,4 @@
-function add(a) {
+const add = (a) => {
     let currentSum = a;
 
     function addF(b) {

@@ -1,4 +1,4 @@
-function doneOrNot(board){
+const doneOrNot = (board) => {
     for (let i = 0; i < board[0].length; i++) {
         let row_string = board[i].join('');
         let col_string = '';

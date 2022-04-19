@@ -1,5 +1,5 @@
 function nextBigger(n){
-    var n_str = n + '';
+    let n_str = n + '';
     for (let i = n_str.length-1; i > 0; i--) {
         if (+n_str[i-1] < +n_str[i]) {
             let stop_digit = +n_str[i-1];

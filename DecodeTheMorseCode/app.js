@@ -1,4 +1,4 @@
-decodeMorse = function(morseCode){
+const decodeMorse = (morseCode) => {
     let ref = {
         '...---...': 'sos',
         '.-':     'a',
@@ -45,13 +45,14 @@ decodeMorse = function(morseCode){
 
     return morseCode
         .split('   ')
-        .map(
-            a => a
+        .map(a => a
                 .split(' ')
-                .map(
-                    b => ref[b]
-                ).join('')
-        ).join(' ').toUpperCase().trim();
+                .map(b => ref[b])
+                .join('')
+        )
+        .join(' ')
+        .toUpperCase()
+        .trim();
 }
 
 console.log(decodeMorse('.... . -.--   .--- ..- -.. .'));

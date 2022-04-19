@@ -33,7 +33,7 @@ const RomanNumerals = {
     fromRoman: function(roman) {
         let value = 0;
 
-        for (var i = 0; i < roman.length; i++) {
+        for (let i = 0; i < roman.length; i++) {
             const two = this.getNumber(roman[i]+roman[i+1]);
             const one = this.getNumber(roman[i]);
             if (typeof two !== "undefined") {

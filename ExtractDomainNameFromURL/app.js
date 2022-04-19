@@ -1,4 +1,4 @@
-function domainName(url){
+const domainName = (url) => {
     if (url.indexOf('http') === 0 || url.indexOf('https') === 0) {
         const url_domain = url.split('://')[1];
         if (url_domain.indexOf('www') === 0) {

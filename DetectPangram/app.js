@@ -1,4 +1,4 @@
-function isPangram(string){
+const isPangram = (string) => {
 
     // Write string with all alphabet letters. Create map if this letters and set value to 0 for all.
     // Loop through passed string as a parameter and check if that character with lower case has in map, if it is, then increase value by one.
