@@ -1,4 +1,4 @@
-function snail (array) {
+const snail = (array) => {
     let result_array = [];
     while (array.length > 0) {
         // cut first line

@@ -3,7 +3,7 @@
 // contains an uppercase letter
 // contains a number
 
-function validate(password) {
+const validate = (password) => {
     return /(?=.{6,})(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(^([a-zA-Z0-9])*$)/.test(password);
 }
 

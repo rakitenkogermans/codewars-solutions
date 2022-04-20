@@ -1,4 +1,4 @@
-function findShort(s){
+const findShort = (s) => {
 
     // Firstly we initialize array,
     // split given string into array by whitespace,

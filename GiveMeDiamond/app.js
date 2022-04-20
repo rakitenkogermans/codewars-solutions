@@ -1,4 +1,4 @@
-function diamond(n){
+const diamond = (n) => {
     if (n === 0 || n < 0 || n % 2 === 0 ) return null;
     let diam_arr = [];
     for (let i = 0; i < n; i += 2) {

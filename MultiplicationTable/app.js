@@ -1,4 +1,4 @@
-multiplicationTable = function(size) {
+const multiplicationTable = (size) => {
     let two_dim_arr = [];
     for (let i = 1; i <= size; i++) {
         let temp_arr = [];

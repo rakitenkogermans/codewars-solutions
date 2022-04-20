@@ -1,4 +1,4 @@
-function oddOrEven(array) {
+const oddOrEven = (array) => {
     
     const odd = 'odd';
     const even = 'even';

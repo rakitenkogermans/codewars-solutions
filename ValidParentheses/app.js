@@ -1,13 +1,4 @@
-// function validParentheses(parens) {
-//     if (0 <= parens.length && parens.length <= 100) {
-//         let open_parentheses = (parens.match(/\(/g) || []).length;
-//         let close_parentheses = (parens.match(/\)/g) || []).length;
-//         return open_parentheses === close_parentheses;
-//     }
-//     return false;
-// }
-
-function validParentheses(parens)  {
+const validParentheses = (parens) => {
 
     if (parens.length % 2 !== 0) return false;
 

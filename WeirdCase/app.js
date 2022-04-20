@@ -1,4 +1,4 @@
-function toWeirdCase(string){
+const toWeirdCase = (string) => {
 
     // Split string into array of words.
     // Create empty array where we push new weird case word.

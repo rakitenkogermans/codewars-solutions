@@ -30,7 +30,7 @@ const checkBoxes = (matrix) => {
     return checkRows(boxesMatrix);
 }
 
-function validSolution(board){
+const validSolution = (board) => {
     const checker = [
         checkRows(JSON.parse(JSON.stringify(board))),
         checkColumns(JSON.parse(JSON.stringify(board))),

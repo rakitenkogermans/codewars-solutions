@@ -1,5 +1,5 @@
-function humanReadable(seconds) {
-     if (seconds <= 359999 ){
+const humanReadable = (seconds) => {
+     if (seconds <= 359999) {
         let hours = Math.floor((seconds / 60) / 60);
         let minutes = Math.floor((seconds - (hours * 60 * 60)) / 60);
         let second = seconds - (hours * 60 * 60) - minutes * 60;

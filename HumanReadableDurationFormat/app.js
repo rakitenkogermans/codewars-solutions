@@ -1,4 +1,4 @@
-function formatDuration(seconds) {
+const formatDuration = (seconds) => {
     if (+seconds === 0) return 'now';
     let years, days, hours, minutes, second;
     let result = [];

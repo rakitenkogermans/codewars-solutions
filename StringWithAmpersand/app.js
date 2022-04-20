@@ -1,4 +1,4 @@
-function list(names) {
+const list = (names) => {
     let str = '';
     let arr1 = names.map((k) => {
         return k.name;

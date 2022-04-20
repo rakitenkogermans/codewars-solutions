@@ -1,4 +1,4 @@
-function firstNonRepeatingLetter(s) {
+const firstNonRepeatingLetter = (s) => {
     let map = new Map();
     for (let i = 0; i < s.length; i++) {
         if (map.has(s[i].toLowerCase())) {

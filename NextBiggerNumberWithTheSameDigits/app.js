@@ -1,4 +1,4 @@
-function nextBigger(n){
+const nextBigger = (n) =>{
     let n_str = n + '';
     for (let i = n_str.length-1; i > 0; i--) {
         if (+n_str[i-1] < +n_str[i]) {

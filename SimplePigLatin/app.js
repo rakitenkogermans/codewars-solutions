@@ -1,4 +1,4 @@
-function pigIt(str){
+const pigIt = (str) => {
     let words_arr = str.split(' ');
     for (let i = 0; i < words_arr.length; i++) {
         if (

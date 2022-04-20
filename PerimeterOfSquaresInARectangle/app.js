@@ -1,4 +1,4 @@
-function perimeter(n) {
+const perimeter = (n) => {
     if (n === 0) return 4;
     if (n === 1) return 8;
     let count = 2;
